@@ -14,7 +14,7 @@
 #X msg 5 583 open \$1/\$2;
 #X obj 15 195 t b b, f 15;
 #X msg 10 139 symbol \$1;
-#X msg 118 60 misc;
+#X msg 118 61 misc;
 #X obj 10 114 pack s;
 #X obj 11 164 t b s, f 20;
 #X msg 81 107 misc2;
@@ -24,6 +24,7 @@
 #X obj 358 15 inlet;
 #X obj 4 17 inlet;
 #X obj 456 14 inlet;
+#X obj 119 38 loadbang;
 #X connect 0 0 2 0;
 #X connect 1 0 2 0;
 #X connect 2 0 9 1;
@@ -52,3 +53,4 @@
 #X connect 22 0 16 0;
 #X connect 23 0 7 0;
 #X connect 24 0 1 0;
+#X connect 25 0 15 0;
