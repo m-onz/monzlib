@@ -7,29 +7,29 @@
 #X text 5 15 example patch;
 #X text 6 28 m-onz 2022;
 #X text 6 41 m-onz.net;
-#X obj 413 148 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#X obj 170 528 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
-#X obj 330 233 sequencer;
-#X obj 411 197 constrainedseq, f 26;
-#X obj 411 27 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#X obj 114 582 sequencer;
+#X obj 172 553 constrainedseq;
+#X obj 225 26 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
 #X msg 642 158 1 2 3;
-#X obj 419 232 print;
+#X obj 196 586 print;
 #X obj 333 635 playdir~;
-#X msg 659 130 misc2;
+#X msg 705 171 misc2;
 #X floatatom 334 609 5 0 0 0 - - - 0;
-#X obj 395 411 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#X obj 394 531 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
 #X obj 334 584 sequencer;
-#X obj 394 431 constrainedseq, f 26;
-#X obj 405 458 print;
-#X obj 414 74 random 100;
-#X obj 414 99 > 90;
-#X obj 414 124 sel 1;
-#X obj 395 332 random 100;
-#X obj 395 357 > 90;
-#X obj 395 382 sel 1;
-#X obj 413 45 metro 94;
+#X obj 393 551 constrainedseq;
+#X obj 417 582 print;
+#X obj 171 454 random 100;
+#X obj 171 479 > 90;
+#X obj 171 504 sel 1;
+#X obj 393 454 random 100;
+#X obj 393 479 > 90;
+#X obj 393 504 sel 1;
+#X obj 227 44 metro 94;
 #X obj 660 104 loadbang;
 #X connect 0 0 2 0;
 #X connect 1 0 0 0;
