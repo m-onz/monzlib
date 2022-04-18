@@ -1,0 +1,17 @@
+#N canvas 291 482 450 300 12;
+#X obj 20 211 randomseq, f 24;
+#X obj 20 239 print;
+#X floatatom 185 185 5 0 0 0 - - - 0;
+#X floatatom 130 145 5 0 0 0 - - - 0;
+#X floatatom 75 100 5 0 0 0 - - - 0;
+#X obj 20 17 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X text 232 187 length of sequence;
+#X text 175 146 rest likelihood: 0 (most likely) to 99;
+#X text 118 97 range maximum;
+#X text 43 16 generate a sequence;
+#X connect 0 0 1 0;
+#X connect 2 0 0 3;
+#X connect 3 0 0 2;
+#X connect 4 0 0 1;
+#X connect 5 0 0 0;
