@@ -1,0 +1,23 @@
+#N canvas 567 38 450 511 12;
+#X obj 100 281 playdir~;
+#X msg 126 171 misc;
+#X msg 142 227 misc2;
+#X floatatom 100 138 5 0 0 0 - - - 0;
+#X obj 100 306 *~ 0.8;
+#X obj 101 434 dac~;
+#X obj 166 254 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 76 247 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X text 7 1 monzlib;
+#X text 5 15 example patch;
+#X text 6 28 m-onz 2022;
+#X text 6 41 m-onz.net;
+#X connect 0 0 4 0;
+#X connect 1 0 0 1;
+#X connect 2 0 0 1;
+#X connect 3 0 0 0;
+#X connect 4 0 5 0;
+#X connect 4 0 5 1;
+#X connect 6 0 0 2;
+#X connect 7 0 0 0;
