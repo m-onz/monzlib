@@ -1,28 +1,38 @@
-#N canvas 57 99 673 419 12;
-#X obj 107 278 playdir~;
-#X msg 182 72 misc;
-#X msg 187 161 misc2;
+#N canvas 32 135 673 419 12;
 #X floatatom 51 68 5 0 0 0 - - - 0;
 #X obj 107 303 *~ 0.8;
 #X obj 102 349 dac~;
-#X obj 173 251 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#X obj 181 275 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
 #X obj 9 199 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000;
-#X text 202 247 next sound in the folder;
+#X text 210 271 next sound in the folder;
 #X text 51 42 seek by index;
 #X text 6 169 trigger the sound;
-#X text 237 72 load a folder residing in ~/Pd/externals/monzlib/sounds/
-;
-#X text 216 101 for eg ~/Pd/externals/monzlib/sounds/snares you would
-send the message "snares";
 #X text 568 362 monzlib;
 #X text 568 380 m-onz 2022;
-#X connect 0 0 4 0;
-#X connect 1 0 0 1;
-#X connect 2 0 0 1;
-#X connect 3 0 0 0;
-#X connect 4 0 5 0;
-#X connect 4 0 5 1;
-#X connect 6 0 0 2;
-#X connect 7 0 0 0;
+#X obj 329 75 pdcontrol;
+#X msg 329 47 dir;
+#X msg 328 102 \$1/sounds/misc2;
+#X msg 468 108 \$1/sounds/misc;
+#X obj 329 20 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 468 77 pdcontrol;
+#X msg 468 49 dir;
+#X obj 467 25 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 107 278 playdir~;
+#X connect 0 0 18 0;
+#X connect 1 0 2 0;
+#X connect 1 0 2 1;
+#X connect 3 0 18 2;
+#X connect 4 0 18 0;
+#X connect 10 0 12 0;
+#X connect 11 0 10 0;
+#X connect 12 0 18 1;
+#X connect 13 0 18 1;
+#X connect 14 0 11 0;
+#X connect 15 0 13 0;
+#X connect 16 0 15 0;
+#X connect 17 0 16 0;
+#X connect 18 0 1 0;
