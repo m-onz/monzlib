@@ -1,7 +1,6 @@
 
 # monzlib
 
-* use Pd 0.50.2+ (latest version).
 * copy monzlib to ~/Documents/Pd/externals/.
 * add "declare -path monzlib" to the patch.
 * or add monzlib folder path to pd start path via preferences.
